@@ -22,11 +22,12 @@ function generator(x, y, largeur, hauteur, hauteurToit) {
     // Façade
     rect(x, y, largeur, hauteur);
     //Toit
-    triangle(x - largeur / 2, y - hauteur / 2, x + largeur / 2, y - hauteur / 2, x, y - hauteur/2 - hauteurToit);
-    //Porte
+    triangle(x - largeur / 2, y - hauteur / 2, x + largeur / 2, y - hauteur / 2, x, y - hauteur / 2 - hauteurToit);
+    //Fenêtres
     rect(x + largeur / 3, y, largeur / 4, hauteur / 4);
     rect(x - largeur / 3, y, largeur / 4, hauteur / 4);
-    console.log(hauteur / 2);
+    //porte
+    rect(x, y + hauteur / 4, largeur / 3, hauteur / 2);
 
 }
 
