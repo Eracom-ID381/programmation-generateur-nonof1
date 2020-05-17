@@ -14,7 +14,7 @@ function draw() {
     // et si le timer est écoulé
     if (frameCount % (timer * 60) == 0 && !mouseIsPressed) {
         // Appel de notre fonction generator
-        generator(random(0, windowWidth), random(0, windowHeight), random(0, 200), random(0, 400), random(0, 400));
+        generator(windowWidth / 2, windowHeight / 2, random(30, 200), random(30, 400), random(30, 400));
     }
 }
 
