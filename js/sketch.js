@@ -32,16 +32,16 @@ class Maison {
     afficher() {
         //Façade
         fill(random(0, 10), random(50, 100), random(50, 100));
-        rect(x, y, largeur, hauteur);
+        rect(this.x, this.y, this.largeur, this.hauteur);
         //Toit
         fill(random(10, 20), random(50, 100), random(50, 100));
-        triangle(x - largeur / 2, y - hauteur / 2, x + largeur / 2, y - hauteur / 2, x, y - hauteur / 2 - hauteurToit);
+        triangle(this.x - this.largeur / 2, this.y - this.hauteur / 2, this.x + this.largeur / 2, this.y - this.hauteur / 2, this.x, this.y - this.hauteur / 2 - this.hauteurToit);
         //porte
-        rect(x, y + hauteur / 4, largeur / 3, hauteur / 2);
+        rect(this.x, this.y + this.hauteur / 4, this.largeur / 3, this.hauteur / 2);
         //Fenêtres
         fill(random(60, 70), random(50, 100), random(50, 100));
-        rect(x + largeur / 3, y, largeur / 4, hauteur / 4);
-        rect(x - largeur / 3, y, largeur / 4, hauteur / 4);
+        rect(this.x + this.largeur / 3, this.y, this.largeur / 4, this.hauteur / 4);
+        rect(this.x - this.largeur / 3, this.y, this.largeur / 4, this.hauteur / 4);
     }
 }
 
